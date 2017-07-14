@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ogulcan.ucarsu.org.kounothesaplama.MainActivity"
+    android:weightSum="1">
+
+
+    <RelativeLayout
+        android:id="@+id/layout_myToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <include
+            layout="@layout/toolbar" >
+
+        </include>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <Button android:id="@+id/donemOrt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dönem Ortalaması Hesaplama"
+            android:drawableStart="@drawable/dersnotu"
+            android:drawablePadding="-5sp"
+            android:background="@drawable/buttonvalue"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dersOrt"
+            android:text="Ders Ortalaması Hesaplama"
+            android:drawableStart="@drawable/lesson2"
+            android:layout_marginTop="16dp"
+            android:drawablePadding="-20sp"
+            android:background="@drawable/newbuttonvalue"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/finaldenKacAlmamLazim"
+            android:text="Finalden Kaç Almam Lazım ?"
+            android:drawableStart="@drawable/finalexam"
+            android:layout_marginTop="16dp"
+            android:drawablePadding="-20sp"
+            android:background="@drawable/newbuttonvalue4"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:autoLink="web"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/harfNotlari"
+            android:text="Harf Notları Karşılıkları"
+            android:drawableStart="@drawable/alfabe"
+            android:layout_marginTop="16dp"
+            android:drawablePadding="-20sp"
+            android:background="@drawable/newbuttonvalue2"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Çıkış"
+            android:drawableStart="@drawable/cikis"
+            android:id="@+id/cikis"
+            android:layout_marginTop="16dp"
+            android:drawablePadding="-20sp"
+            android:background="@drawable/newbuttonvalue3"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

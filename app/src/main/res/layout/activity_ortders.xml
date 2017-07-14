@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:id="@+id/layout_myToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <include
+            layout="@layout/toolbar" >
+
+        </include>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/sv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_myToolBar"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:id="@+id/FirstSecim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Yarıyıl İçi(Vize) Notunuzu Giriniz"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="6dp"
+                android:background="@color/grey400"
+                android:orientation="vertical" />
+
+
+            <EditText
+                android:id="@+id/vize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_weight="0.16"
+                android:background="@color/green50"
+                android:ems="10"
+                android:hint="Vize Notu.."
+                android:inputType="number"
+                android:maxLength="3"
+                android:selectAllOnFocus="false"
+                android:singleLine="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="6dp"
+                android:background="@color/grey400"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+
+            </LinearLayout>
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Yarıyıl içi(Vize) notunun etkisi % kaç? "
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="6dp"
+                android:background="@color/grey400"
+                android:maxLength="3"
+                android:orientation="vertical" />
+
+
+            <EditText
+                android:id="@+id/vize_etki"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_weight="0.04"
+                android:background="@color/green50"
+                android:ems="10"
+                android:hint="Vize Etkisi %'si"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="6dp"
+                android:background="@color/grey400"
+                android:orientation="vertical"
+                android:padding="0dp"></LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey400"
+                android:orientation="vertical"
+                android:padding="0dp"></LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Final Notunuzu giriniz"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="6dp"
+                android:background="@color/grey400"
+                android:orientation="vertical" />
+
+
+            <EditText
+                android:id="@+id/finalNot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_weight="0.04"
+                android:background="@color/green50"
+                android:ems="10"
+                android:hint="Final Notu.."
+                android:inputType="number"
+                android:maxLength="3"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="6dp"
+                android:background="@color/grey400"
+                android:orientation="vertical"
+                android:padding="0dp"></LinearLayout>
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Final notunun etkisi % kaç?"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="6dp"
+                android:background="@color/grey400"
+                android:orientation="vertical"
+                android:padding="0dp" />
+
+
+            <EditText
+                android:id="@+id/final_etki"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_weight="0.60"
+                android:background="@color/green50"
+                android:ems="10"
+                android:hint="Finalin Etki %'si"
+                android:inputType="number"
+                android:maxLength="3"
+                android:singleLine="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="6dp"
+                android:background="@color/grey400"
+                android:orientation="vertical"
+                android:padding="0dp" />
+
+            <Button
+                android:id="@+id/btn_hesapla"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:text="Hesapla" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/sv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_myToolBar"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:id="@+id/SecondSecim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Yarıyıl İçi Etkinlikler"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/grey400"
+                android:orientation="vertical" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Vize Notu Giriniz"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/vizeNotuVPF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_weight="0.20"
+                android:background="@color/green50"
+                android:ems="10"
+                android:hint="Vize Notu.."
+                android:inputType="number"
+                android:maxLength="3"
+                android:selectAllOnFocus="false"
+                android:singleLine="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Vize Notunun Yarıyıl İçine Etkisini Giriniz ?"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/vizeNotuetkisiVPF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_weight="0.20"
+                android:background="@color/green50"
+                android:ems="10"
+                android:hint="Vize Notunun Yarıyıl İçine Etkisi % Kaç ?"
+                android:inputType="number"
+                android:maxLength="3"
+                android:selectAllOnFocus="false"
+                android:singleLine="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="6dp"
+                android:background="@color/grey400"
+                android:orientation="vertical"
+                android:padding="0dp"></LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Proje Notu Giriniz"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/projeNotuVPF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_weight="0.20"
+                android:background="@color/green50"
+                android:ems="10"
+                android:hint="Proje Notu.."
+                android:inputType="number"
+                android:maxLength="3"
+                android:selectAllOnFocus="false"
+                android:singleLine="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Proje Notunun Yarıyıl İçine Etkisini Giriniz ?"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/projeNotuEtkiVPF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_weight="0.20"
+                android:background="@color/green50"
+                android:ems="10"
+                android:hint="Proje Notunun Yarıyıl İçine Etkisi % Kaç ?"
+                android:inputType="number"
+                android:maxLength="3"
+                android:selectAllOnFocus="false"
+                android:singleLine="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="6dp"
+                android:background="@color/grey400"
+                android:orientation="vertical"
+                android:padding="0dp"></LinearLayout>
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:padding="0dp"
+                android:text="Yarıyıl İçi Etkinliklerin Genele Etkisi % Kaç? "
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/vize_etkiVPF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_weight="0.04"
+                android:background="@color/green50"
+                android:ems="10"
+                android:hint="Vize Etkisi %'si"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey400"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+            </LinearLayout>
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="YarıYıl Sonu"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="6dp"
+                android:background="@color/grey400"
+                android:orientation="vertical" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Final Notu"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/finalNotVPF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_weight="0.04"
+                android:background="@color/green50"
+                android:ems="10"
+                android:hint="Final Notu Giriniz.."
+                android:inputType="number"
+                android:maxLength="3"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:padding="0dp"
+                android:text="Final Notunun Etkisi % kaç?"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/final_etkiVPF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_weight="0.60"
+                android:background="@color/green50"
+                android:ems="10"
+                android:hint="Finalin Notunun Etkisini Giriniz.."
+                android:inputType="number"
+                android:maxLength="3"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="6dp"
+                android:background="@color/grey400"
+                android:orientation="vertical"
+                android:padding="0dp" />
+
+            <Button
+                android:id="@+id/btn_hesaplaVPF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:text="Hesapla" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/sv3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_myToolBar"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:id="@+id/ThirdSecim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Yarıyıl İçi Etkinlikler"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/grey400"
+                android:orientation="vertical" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Vize Notu Giriniz"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/vizeNotuVPSF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_weight="0.20"
+                android:background="@color/green50"
+                android:ems="10"
+                android:hint="Vize Notu.."
+                android:inputType="number"
+                android:maxLength="3"
+                android:selectAllOnFocus="false"
+                android:singleLine="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Vize Notunun Yarıyıl İçine Etkisini Giriniz ?"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/vizeNotuetkisiVPSF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_weight="0.20"
+                android:background="@color/green50"
+                android:ems="10"
+                android:hint="Vize Notunun Yarıyıl İçine Etkisi % Kaç ?"
+                android:inputType="number"
+                android:maxLength="3"
+                android:selectAllOnFocus="false"
+                android:singleLine="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="6dp"
+                android:background="@color/grey400"
+                android:orientation="vertical"
+                android:padding="0dp"></LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Proje Notu Giriniz"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/projeNotuVPSF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_weight="0.20"
+                android:background="@color/green50"
+                android:ems="10"
+                android:hint="Proje Notu.."
+                android:inputType="number"
+                android:maxLength="3"
+                android:selectAllOnFocus="false"
+                android:singleLine="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Proje Notunun Yarıyıl İçine Etkisini Giriniz ?"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/projeNotuEtkiVPSF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_weight="0.20"
+                android:background="@color/green50"
+                android:ems="10"
+                android:hint="Proje Notunun Yarıyıl İçine Etkisi % Kaç ?"
+                android:inputType="number"
+                android:maxLength="3"
+                android:selectAllOnFocus="false"
+                android:singleLine="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="6dp"
+                android:background="@color/grey400"
+                android:orientation="vertical"
+                android:padding="0dp"></LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Sunum Notu Giriniz"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/sunumNotuVPSF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_weight="0.20"
+                android:background="@color/green50"
+                android:ems="10"
+                android:hint="Sunum Notu.."
+                android:inputType="number"
+                android:maxLength="3"
+                android:selectAllOnFocus="false"
+                android:singleLine="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Sunum Notunun Yarıyıl İçine Etkisini Giriniz ?"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/sunumNotuEtkiVPSF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_weight="0.20"
+                android:background="@color/green50"
+                android:ems="10"
+                android:hint="Sunum Notunun Yarıyıl İçine Etkisi % Kaç ?"
+                android:inputType="number"
+                android:maxLength="3"
+                android:selectAllOnFocus="false"
+                android:singleLine="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="6dp"
+                android:background="@color/grey400"
+                android:orientation="vertical"
+                android:padding="0dp"></LinearLayout>
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:padding="0dp"
+                android:text="Yarıyıl İçi Etkinliklerin Genele Etkisi % Kaç? "
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/vize_etkiVPSF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_weight="0.04"
+                android:background="@color/green50"
+                android:ems="10"
+                android:hint="Vize Etkisi %'si"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey400"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+            </LinearLayout>
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="YarıYıl Sonu"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/grey400"
+                android:orientation="vertical" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Final Notu"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/finalNotVPSF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_weight="0.04"
+                android:background="@color/green50"
+                android:ems="10"
+                android:hint="Final Notu Giriniz.."
+                android:inputType="number"
+                android:maxLength="3"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:padding="0dp"
+                android:text="Final Notunun Etkisi % kaç?"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/final_etkiVPSF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_weight="0.60"
+                android:background="@color/green50"
+                android:ems="10"
+                android:hint="Finalin Notunun Etkisini Giriniz.."
+                android:inputType="number"
+                android:maxLength="3"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="6dp"
+                android:background="@color/grey400"
+                android:orientation="vertical"
+                android:padding="0dp" />
+
+            <Button
+                android:id="@+id/btn_hesaplaVPSF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:text="Hesapla" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
